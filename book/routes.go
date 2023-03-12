@@ -2,6 +2,7 @@ package book
 
 import "github.com/gin-gonic/gin"
 
+// AddRoutes helps to add all CRUD handler routes
 func (a *App) AddRoutes(r *gin.Engine) {
 
 	r.GET("/ping", func(c *gin.Context) {
@@ -10,6 +11,7 @@ func (a *App) AddRoutes(r *gin.Engine) {
 		})
 	})
 
+	// CRUD handlers for book
 	r.POST("/book", a.createBook)
 	r.GET("/book", a.listBook)
 	r.GET("/book/:id", a.getBook)

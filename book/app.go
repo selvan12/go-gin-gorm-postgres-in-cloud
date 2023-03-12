@@ -13,6 +13,7 @@ type App struct {
 	DB     *gorm.DB
 }
 
+// NewApp creates gin Engine and DB with DB Model Migrate
 func NewApp() *App {
 	log.Println("App In")
 

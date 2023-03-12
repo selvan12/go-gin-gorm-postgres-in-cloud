@@ -7,8 +7,9 @@ import (
 	"gorm.io/gorm"
 )
 
+// InitDB used to init the remote DB (PostgreSQL as a Service)
 func InitDB() *gorm.DB {
-	// databse info from ElephantDB
+	// Databse info from ElephantDB (PostgreSQL as a Service Cloud Database)
 	// postgres://xhnxbuqe:kGHMnhnc-hbhVZY04JzZP1VUfv_7-OIh@mahmud.db.elephantsql.com/xhnxbuqe
 
 	dsn := "host=mahmud.db.elephantsql.com user=xhnxbuqe password=kGHMnhnc-hbhVZY04JzZP1VUfv_7-OIh dbname=xhnxbuqe port=5432 sslmode=disable"
